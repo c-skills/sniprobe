@@ -1,0 +1,25 @@
+# comment lines must start with the first char being a dash
+#
+# This file contains a list of SNIs that are expected to be whitelisted
+# by the censorship blocker and which are to be probed when connecting
+# to sites that are blocked, e.g.:
+#
+# ./sniprobe www.bbc.co.uk 443 sni.txt
+#
+# webserver on www.bbc.co.uk on their side will miss the
+# wrong SNI and return their default X509 certificate and connection
+# can continue
+#
+# If you see Failure messages with 'dial tcp ... i/o timeout' messages the port
+# is completely blocked. If you see 'connection refused', this port is either
+# closed or blocked. If you see TLS or X509 errors, this SNI is blocked for
+# this node:port. If you see Success message, it is open and the https connection
+# works.
+
+irna.ir
+en.irna.ir
+irangov.ir
+iranpress.com
+
+# more ...
+
