@@ -11,7 +11,7 @@ This is not a political discussion. You will find censorship in almost any count
 and it has many shapes. We have obviously chosen Iran in this example, for a good
 and actual reason. Given the level of blocking in Iran as of today, SNI probing
 might not be a solution anymore, but might be of help elsewhere. If you have lists
-that worked for you or can do tests behind blocking equipement, let us now.
+that worked for you or can do tests behind blocking equipment, let us now.
 
 If you are interested in that topic and think censorship can only happen to others,
 we recommend a look into the mirror and to read Bert's excellent [blog post](https://berthub.eu/articles/posts/who-controls-the-internet).
@@ -20,13 +20,13 @@ we recommend a look into the mirror and to read Bert's excellent [blog post](htt
 Intro
 -----
 
-`c->skills research` has conducted some research about censorship blockings in certain
+`c->skills research` has conducted some research about censorship blocking in certain
 countries. Our bros and anarchic noses over at [THC](https://blog.thc.org/the-iran-firewall-a-preliminary-report) have done so previously, too.
 Despite that our own observations differ a bit (what is possible on day N might be impossible on day N+1),
 they found out that at least in certain times the blocking is based on the SNI of the TLS
 session that is seen by the censor.
 
-According to our own tests, all major news sites ignore unknwon SNIs, so there is a chance
+According to our own tests, all major news sites ignore unknown SNIs, so there is a chance
 to abuse SNI based blocking to make them think that you are visiting a *legit* site,
 while actually browsing behind the wall.
 
@@ -57,7 +57,7 @@ Then `make clean && make`.
 sniswitcher
 -----------
 
-Now the spoiler. Large browsers (notably chrome) are nailed down to use their builtin TLS
+Now the spoiler. Large browsers (notably chrome) are nailed down to use their built-in TLS
 implementations which is not easy to tamper with to set good SNIs on new connects. Neither
 do they support any config settings to help us. You could rebuild your own chrome, but thats
 not an option. So, you have to find a browser that is using system installed TLS libraries
@@ -75,7 +75,7 @@ think you shouldn't.
 Now, part of the discussion can be the monopoly of browser vendors (or at least of browser engines)
 and big-tech that always claims to help and free people but do very little on the technical side
 (let alone the banning of domain-fronting) except making protocols overly complex to cast their
-monoply in stone.
+monopoly in stone.
 
 If this simple SNI switching trick does not help, we provide more tools to overcome blocking
 such as [crash](https://github.com/stealth/crash) or [PSC](https://github.com/stealth/psc).
